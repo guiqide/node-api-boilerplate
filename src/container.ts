@@ -1,12 +1,13 @@
 // import { createContainer, asClass, asFunction, asValue } from "awilix";
 // const { scopePerRequest } = require("awilix-express");
 import { Container } from "inversify";
-import { User } from "./domain/user";
 import { TYPES } from "./domain/types";
+import Application from "./app/Application";
+import config from "../config";
 
 const myContainer = new Container();
 
-myContainer.bind<User>(TYPES.user).to;
+myContainer.bind<Application>(TYPES.app).to(Application);
 // const config = require("../config");
 // const Application = require("./app/Application");
 // const {

@@ -1,6 +1,6 @@
 const TYPES = {
-  app: Symbol.for("App"),
-  user: Symbol.for("User"),
+  app: Symbol.for("app"),
+  user: Symbol.for("user"),
 };
 
 export { TYPES };
